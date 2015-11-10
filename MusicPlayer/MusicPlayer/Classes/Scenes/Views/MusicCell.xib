@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="MusicCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="shC-ec-kKg">
+                        <rect key="frame" x="18" y="17" width="69" height="65"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="69" id="iyF-4J-OrH"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="歌手名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kC2-v0-duk">
+                        <rect key="frame" x="104" y="61" width="51" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="歌曲名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKm-iH-en6">
+                        <rect key="frame" x="104" y="17" width="60" height="24"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="shC-ec-kKg" secondAttribute="bottom" constant="10" id="AyD-L3-axA"/>
+                    <constraint firstItem="kC2-v0-duk" firstAttribute="leading" secondItem="shC-ec-kKg" secondAttribute="trailing" constant="17" id="JHA-Pf-JZx"/>
+                    <constraint firstItem="kC2-v0-duk" firstAttribute="bottom" secondItem="shC-ec-kKg" secondAttribute="bottom" id="Qn0-Fq-MYy"/>
+                    <constraint firstItem="TKm-iH-en6" firstAttribute="top" secondItem="shC-ec-kKg" secondAttribute="top" id="eoV-qA-UKa"/>
+                    <constraint firstItem="shC-ec-kKg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="jJn-TT-gsU"/>
+                    <constraint firstItem="kC2-v0-duk" firstAttribute="top" secondItem="TKm-iH-en6" secondAttribute="bottom" constant="20" id="nQp-2w-clY"/>
+                    <constraint firstItem="shC-ec-kKg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="s7m-JB-uyz"/>
+                    <constraint firstItem="TKm-iH-en6" firstAttribute="leading" secondItem="shC-ec-kKg" secondAttribute="trailing" constant="17" id="yPQ-wk-KLC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="img" destination="shC-ec-kKg" id="dfB-un-kAX"/>
+                <outlet property="name" destination="TKm-iH-en6" id="kyv-xq-C46"/>
+                <outlet property="singer" destination="kC2-v0-duk" id="33B-hx-8Hc"/>
+            </connections>
+            <point key="canvasLocation" x="375" y="395"/>
+        </tableViewCell>
+    </objects>
+</document>
